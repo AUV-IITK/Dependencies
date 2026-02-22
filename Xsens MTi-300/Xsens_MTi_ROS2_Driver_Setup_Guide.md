@@ -63,9 +63,9 @@ source ~/.bashrc
 ### 6. Run the Driver
 
 #### 🔧 Non-GUI (Headless)
-
+To run the driver without a visualizer (best for running on the AUV):
 ```bash
-ros2 launch xsens_mti_ros2_driver mti_launch.py
+ros2 launch xsens_mti_ros2_driver xsens_mti_node.launch.py
 ```
 
 #### 🖥️ GUI with RViz
@@ -73,7 +73,7 @@ ros2 launch xsens_mti_ros2_driver mti_launch.py
 In a separate terminal:
 
 ```bash
-rviz2
+ros2 launch xsens_mti_ros2_driver display.launch.py
 ```
 
 Add display types:
